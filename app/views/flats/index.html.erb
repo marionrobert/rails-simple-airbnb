@@ -1,0 +1,24 @@
+<div class="container">
+  <h1> All flats (<%= @flats.count %>)</h1>
+  <div class="row cards mt-1" >
+    <% @flats.each do |flat| %>
+      <div class="col-xs-12 col-lg-4 mb-2">
+        <div class="card">
+          <img class="card-img-top" src="https://picsum.photos/200/125" alt="Card image cap" style="height: 40%">
+          <div class="card-infos" style="height: 40%">
+            <div class="card-body">
+              <h5 class="card-title"><%= flat.name %></h5>
+              <p class="card-text"><%= flat.address %></p>
+              <p class="card-text"><%= flat.description %></p>
+              <div class="guests_price" style="height: 20%">
+                <p class="card-text"><i class="fa-solid fa-user-group"></i> <%= flat.number_of_guests %></p>
+                <p class="card-text">€ <%= flat.price_per_night %></p>
+              </div>
+            </div>
+            <a href="#" class="btn btn-link">More info</a>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

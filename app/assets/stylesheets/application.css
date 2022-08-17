@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+.cards {
+  display: flex;
+  /* justify-content: space; */
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.guests_price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-body {
+  background-color: whitesmoke;
+}
